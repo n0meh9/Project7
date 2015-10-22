@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="edu.temple.webbrowser.Browser">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:layout_marginRight="80dp"
+        android:id="@+id/txtBroswerURLs"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/txtBrowserURLs" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnBrowserGos"
+        android:id="@+id/btnBrowserGo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/browser_webview"
+        android:layout_below="@+id/btnBrowserGo"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
